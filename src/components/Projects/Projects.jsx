@@ -1,12 +1,12 @@
 import "./Projects.css";
 
-// import project1 from "../../assets/projects/project1.png";
-// import project2 from "../../assets/projects/project2.png";
-// import project3 from "../../assets/projects/project3.png";
+import project1 from "../../assets/projects/project1.png";
+import project2 from "../../assets/projects/project2.png";
+import project3 from "../../assets/projects/project3.png";
 
 const projects = [
   {
-    image: "https://via.placeholder.com/600x400?text=Project+1",
+    image: project1,
     title: "Portfolio Website",
     description: "A modern responsive portfolio built using React.js.",
     tech: ["React", "CSS", "JavaScript"],
@@ -14,7 +14,7 @@ const projects = [
     demo: "#",
   },
   {
-    image: "https://via.placeholder.com/600x400?text=Project+2",
+    image: project2,
     title: "Weather App",
     description: "Weather application using API.",
     tech: ["React", "API", "CSS"],
@@ -22,7 +22,7 @@ const projects = [
     demo: "https://weather-app-two-mocha-c0pfuj4a8h.vercel.app/",
   },
   {
-    image: "https://via.placeholder.com/600x400?text=Project+3",
+    image: project3,
     title: "Todo App",
     description: "Task management application.",
     tech: ["React", "LocalStorage", "CSS"],
