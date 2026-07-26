@@ -18,8 +18,8 @@ const projects = [
     title: "Weather App",
     description: "Weather application using API.",
     tech: ["React", "API", "CSS"],
-    github: "#",
-    demo: "#",
+    github: "https://github.com/SunilHacker62/weather-app",
+    demo: "https://weather-app-two-mocha-c0pfuj4a8h.vercel.app/",
   },
   {
     image: "https://via.placeholder.com/600x400?text=Project+3",
