@@ -26,8 +26,8 @@ const projects = [
     title: "Todo App",
     description: "Task management application.",
     tech: ["React", "LocalStorage", "CSS"],
-    github: "#",
-    demo: "#",
+    github: "https://github.com/SunilHacker62/todo-app",
+    demo: "https://todo-app-bice-three-16.vercel.app/",
   },
 ];
 
