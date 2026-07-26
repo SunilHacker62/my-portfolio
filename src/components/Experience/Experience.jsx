@@ -20,7 +20,7 @@ const timeline = [
     title: "Frontend Developer",
     company: "Looking for Opportunities",
     description:
-      "Seeking opportunities to build scalable web applications.",
+      "Seeking opportunities to build scalable web applications...",
   },
 ];
 
