@@ -1,12 +1,7 @@
 import "./Projects.css";
 
-import project1 from "../../assets/projects/Project1.png";
-import project2 from "../../assets/projects/Project2.png";
-import project3 from "../../assets/projects/Project3.png";
-
 const projects = [
   {
-    image: project1,
     title: "Portfolio Website",
     description: "A modern responsive portfolio built using React.js.",
     tech: ["React", "CSS", "JavaScript"],
@@ -14,7 +9,6 @@ const projects = [
     demo: "#",
   },
   {
-    image: project2,
     title: "Weather App",
     description: "Weather application using API.",
     tech: ["React", "API", "CSS"],
@@ -22,12 +16,19 @@ const projects = [
     demo: "https://weather-app-two-mocha-c0pfuj4a8h.vercel.app/",
   },
   {
-    image: project3,
     title: "Todo App",
-    description: "Task management application.",
+    description: "Todo application using React and LocalStorage.",
     tech: ["React", "LocalStorage", "CSS"],
     github: "https://github.com/SunilHacker62/todo-app",
     demo: "https://todo-app-bice-three-16.vercel.app/",
+  },
+  {
+    title: "Task Manager",
+    description:
+      "Full-stack task management application",
+    tech: ["React", "Node.js", "Express", "MongoDB", "Tailwind",],
+    github: "https://github.com/SunilHacker62/task-manager",
+    demo: "https://task-manager-nine-nu-70.vercel.app/",
   },
 ];
 
@@ -39,11 +40,6 @@ function Projects() {
       <div className="projects-container">
         {projects.map((project, index) => (
           <div className="project-card" key={index}>
-            <img
-              src={project.image}
-              alt={project.title}
-            />
-
             <div className="project-content">
               <h3>{project.title}</h3>
 
