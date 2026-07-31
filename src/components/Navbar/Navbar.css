@@ -45,6 +45,22 @@
   cursor: pointer;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #38bdf8;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.nav-logo {
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+}
+
 @media(max-width:768px){
 
 .nav-links{
