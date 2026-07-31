@@ -3,9 +3,11 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 70px;
-  background: rgba(17, 24, 39, 0.95);
-  backdrop-filter: blur(10px);
+  height: 75px;
+
+  background: rgba(8, 15, 28, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 
   display: flex;
   justify-content: space-between;
@@ -14,80 +16,100 @@
   padding: 0 8%;
   z-index: 1000;
 
-  box-shadow: 0 2px 12px rgba(0,0,0,.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
 }
 
-.logo {
-  color: #38bdf8;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.nav-links {
-  display: flex;
-  gap: 30px;
-}
-
-.nav-links a {
-  color: white;
-  font-size: 17px;
-  transition: .3s;
-}
-
-.nav-links a:hover {
-  color: #38bdf8;
-}
-
-.menu-icon {
-  display: none;
-  color: white;
-  font-size: 28px;
-  cursor: pointer;
-}
+/* ================= Logo ================= */
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
   text-decoration: none;
-  color: #38bdf8;
-  font-size: 2rem;
-  font-weight: 700;
 }
 
 .nav-logo {
   width: 85px;
   height: 85px;
   object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-@media(max-width:768px){
-
-.nav-links{
-
-position:absolute;
-top:70px;
-left:-100%;
-
-width:100%;
-
-background:#111827;
-
-flex-direction:column;
-
-align-items:center;
-
-padding:30px 0;
-
-transition:.4s;
+.nav-logo:hover {
+  transform: scale(1.08);
 }
 
-.nav-links.active{
-left:0;
+/* ================= Navigation ================= */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
 }
 
-.menu-icon{
-display:block;
+.nav-links a {
+  color: #67E8F9;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
+.nav-links a:hover {
+  color: #38BDF8;
+  text-shadow: 0 0 10px #38BDF8;
+}
+
+/* ================= Menu Icon ================= */
+
+.menu-icon {
+  display: none;
+  color: #67E8F9;
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-icon:hover {
+  color: #38BDF8;
+}
+
+/* ================= Mobile ================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 0 6%;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 75px;
+    left: -100%;
+
+    width: 100%;
+    background: #08101C;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    padding: 30px 0;
+
+    transition: left 0.4s ease;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-logo {
+    width: 70px;
+    height: 70px;
+  }
 }
